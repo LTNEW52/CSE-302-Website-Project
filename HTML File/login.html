@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enthusiast Reader Club</title>
+    <link rel="icon" type="Image/jpg" href="../Image/Favicon2.jpg">
+    <link rel="stylesheet" href="../CSS File/style.css">
+</head>
+<body class="entrance">
+    
+    <h1 id="loginpagetitle">Enthusiast Reader Club</h1>
+
+    <div class="formcontainer">
+
+        <div id="imgcontainer">
+            <img src="../Image/loginBanner.jpg">
+        </div>
+
+        <div id="logincontainer">
+            <h1>
+                <img src="../Image/Favicon2.jpg" alt="Image of book club">Welcome Fellow Enthusiast!
+            </h1>
+
+            <form class="loginform" action="../PHP File/login.php" method="post" autocomplete="off">
+                <p>Log In To Your Account!</p>
+
+                <input type="text" name="username" placeholder="Enter Your Username"> <br>
+                <input type="password" name="password" placeholder="Enter Your Password"> <br>
+                <input type="submit" name="login" value="Sign In" id="loginbutton">
+            </form>
+
+            <p id="joinus">Do Not Have An Account? <a href="../PHP File/signup.php">Join Us!</a></p>
+        </div>
+    </div>
+
+    <script src="../JavaScript File/index.js"></script>
+</body>
+</html>

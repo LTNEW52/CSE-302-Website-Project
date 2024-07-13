@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 302 Project</title>
+    <link rel="icon" type="Image/jpg" href="Image/Favicon.jpg">
+    <link rel="stylesheet" href="CSS File/style.css">
+</head>
+<body id="index">
+
+    <div id="profile">
+        <img src="Image/Profile.jpg" alt="Profile Picture of Labib" id="profileimg">
+        <p class="profilename">Labib Tahmid</p>
+        <p class="profilename">221002269</p>
+    </div>
+
+    <div id="present">
+        <h1>Presents</h1>
+        <h1>Enthusiast Reader Club</h1>
+    </div>
+
+    <a href="PHP File/login.php" id="dive">Dive Right In!</a>
+
+    <script>
+
+        const profileimg = document.getElementById("profileimg");
+        const profilename = document.querySelectorAll(".profilename");
+        const present = document.getElementById("present");
+        const dive = document.getElementById("dive");
+
+        window.addEventListener("load" , () => {
+
+            profileimg.style.visibility = "visible";
+            profileimg.classList.add("display");
+
+            setTimeout(() => {
+                profilename.forEach((profile) => {
+                    profile.style.visibility = "visible";
+                    profile.classList.add("display");
+                })
+            } , 1500);
+
+            setTimeout(() => {
+                present.style.visibility = "visible";
+                present.classList.add("display");
+            } , 3000);
+
+            setTimeout(() => {
+                dive.style.visibility = "visible";
+                dive.classList.add("display");
+            } , 4500);
+        })
+        
+    </script>
+</body>
+</html>

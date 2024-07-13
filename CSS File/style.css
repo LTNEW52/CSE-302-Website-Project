@@ -1,0 +1,1022 @@
+/* Main Body */
+
+
+
+body {
+    font-family: "kanit" , sans-serif;
+}
+
+@font-face {
+    src: url(../Font/Kanit-Light.ttf);
+    font-family: "kanit";
+}
+
+
+
+/* Open Page Section */
+
+
+
+#index {
+    background-color: hsl(0, 1%, 14%);
+    margin: 0px;
+    text-align: center;
+    cursor: default;
+}
+
+#profile , #present{
+    width: 400px;
+    height: auto;
+    margin: auto;
+    visibility: hidden;
+}
+
+#profile img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+#profile p {
+    color: aquamarine;
+    display: inline;
+    font-size: 1.4rem;
+    margin: auto;
+    padding: 10px;
+}
+
+#present {
+    border-radius: 50px;
+    background-color: hsl(0, 1%, 24%);
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#present h1 {
+    color: aqua;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#index a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: hsl(9, 100%, 63%);
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#index a:hover {
+    color: hsl(9, 100%, 53%);
+    font-size: 2rem;
+}
+
+.display {
+    animation-name: displayAnim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes displayAnim {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+
+
+/* Login Section */
+
+
+
+.entrance {
+    background-color: rgb(255, 228, 196);
+    margin: 0px;
+    text-align: center;
+    cursor: default;
+}
+
+.entrance > h1 {
+    color: hsl(0, 2%, 33%);
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 5px hsl(0, 3%, 41%);
+}
+
+.formcontainer {
+    width: 98vw;
+    height: 82.6vh;
+    margin: auto;
+    background-color: white;
+}
+
+#imgcontainer {
+    width: 60%;
+    height: auto;
+    float: left;
+    display: inline;
+}
+
+#imgcontainer img {
+    width: 100%;
+}
+
+#logincontainer {
+    width: 40%;
+    height: auto;
+    display: inline;
+    float: left;
+    text-align: center;
+}
+
+#logincontainer h1 {
+    margin-top: 25px;
+    color: hsl(0, 0%, 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: glowAnim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#logincontainer img {
+    margin: 0px;
+    width: 100px;
+    margin-right: 20px;
+}
+
+#logincontainer .loginform {
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 90%);
+    align-self: center;
+    padding: 20px 0px 20px 0px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.loginform p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: hsl(0, 0%, 40%);
+}
+
+.loginform input {
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: hsl(0, 0%, 90%);
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: black;
+}
+
+.loginform input::placeholder {
+    color: black;
+}
+
+.loginform input:focus {
+    outline-style: none;
+}
+
+#loginbutton {
+    font-size: 1.5rem;
+    background-color: hsl(0, 0%, 30%);
+    color: aqua;
+    border: none;
+    border-radius: 25px;
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#loginbutton:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+#joinus {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+#joinus a{
+    text-decoration: none;
+    color: tomato;
+}
+
+#joinus a:hover {
+    font-size: 1.3rem;
+}
+
+@keyframes glowAnim {
+    50% {opacity: 20%;}
+}
+
+
+
+/* Signup Section */
+
+
+
+#signupform {
+    width: 40%;
+    float: left;
+    display: inline;
+}
+
+#signupform h1 {
+    margin: 5px;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 40%);
+    animation-name: glowAnim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#signupform form {
+    width: 80%;
+    margin: auto;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 90%);
+    padding: 15px 0px 15px 0px;
+    box-shadow: -2px 2px 5px black;
+}
+
+#signupform input {
+    background-color: hsl(0, 0%, 90%);
+    margin: 15px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#signupform input::placeholder {
+    color: black;
+}
+
+#signupform input:focus {
+    outline-style: none;
+}
+
+#signupform #signupbutton {
+    font-size: 1.5rem;
+    width: 60%;
+    height: auto;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 20%);
+    color: aqua;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+}
+
+#signupform #signupbutton:hover {
+    background-color: hsl(0, 0%, 30%);
+}
+
+#signupform p {
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0px;
+    padding: 12px;
+}
+
+#signupform a {
+    text-decoration: none;
+    color: tomato;
+}
+
+#signupform a:hover {
+    color: hsl(9, 100%, 54%);
+    font-size: 1.3rem;
+}
+
+#signupimg {
+    width: 60%;
+    height: auto;
+    float: left;
+    display: inline;
+}
+
+#signupimg img {
+    width: 100%;
+}
+
+
+
+/* Home Section */
+
+
+
+#home {
+    margin: 0px;
+    background-image: url(../Image/webbackground.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    cursor: default;
+}
+
+#navbar {
+    height: 70px;
+    width: 98vw;
+}
+
+.navimgholder {
+    padding: 10px;
+    width: fit-content;
+    height: 30px;
+    float: left;
+    background-color: hsl(0, 0%, 10%);
+    border-radius: 25px;
+    margin: 10px;
+    position: relative;
+    left: 5%;
+}
+
+.navimgholder img{
+    width: 200px;
+    position: relative;
+    top: 10%;
+}
+
+.navholder {
+    width: fit-content;
+    float: right;
+    margin: 10px;
+    position: relative;
+    right: 2%;
+    height: 30px;
+}
+
+.ul , .ulmore{
+    padding: 0px;
+    height: auto;
+    display: flex;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    float: left;
+    background-color: hsl(0, 0%, 10%);
+}
+
+.ul {
+    border-top-left-radius: 25px;
+}
+
+.ulmore {
+    border-bottom-right-radius: 25px;
+}
+
+.ul li , .ulmore li{
+    color: tomato;
+    list-style: none;
+    padding: 10px 20px 10px 20px;
+}
+
+.ul li:hover , .ulmore li:hover{
+    background-color: hsl(0, 0%, 20%);
+    border-radius: inherit;
+}
+
+.ul li a , .ulmore li a{
+    text-decoration: none;
+    color: tomato;
+}
+
+.ulmore {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    float: right;
+}
+
+.ulmore .li {
+    display: none;
+    background-color: transparent;
+}
+
+.ulmore:hover .li {
+    display: block;
+    overflow: visible;
+}
+
+
+#welcomebanner {
+    background-color: hsl(0, 0%, 10%);
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 50px;
+    color: cyan;
+}
+
+#greetings {
+    font-size: 2.5rem;
+    margin: 0px;
+    margin: 15px 0px 30px 0px;
+}
+
+.timeshow {
+    font-size: 2rem;
+}
+
+.dateshow {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#intro {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+#intro h1 {
+    color: hsl(157, 100%, 49%);
+    border-bottom: 2px solid hsl(157, 100%, 49%);
+    width: fit-content;
+    margin: auto;
+}
+
+#intro p {
+    color: cyan;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#blog_event {
+    width: 95vw;
+    height: 550px;
+    margin: auto;
+    background-color: hsl(0, 0%, 10%);
+    margin-top: 50px;
+}
+
+#blog_event #blog {
+    width: 60%;
+    height: inherit;
+    padding: 15px;
+    float: left;
+    box-sizing: border-box;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+#blog_event #event {
+    width: 40%;
+    height: inherit;
+    padding: 15px;
+    float: right;
+    box-sizing: border-box;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+#blog h1 , #event h1 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    border-bottom: 2px solid;
+}
+
+#blog h1 {
+    color: tomato;
+}
+
+#blog img {
+    width: 100%;
+}
+
+#event h1 {
+    color: cornflowerblue;
+    animation-name: glowAnim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.blogcontainer , .eventcontainer {
+    margin-top: 100px;
+}
+
+.blogcontainer button , .eventcontainer button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.blogcontainer button {
+    color: cyan;
+}
+
+.eventcontainer button {
+    color: hsl(157, 100%, 49%);
+}
+
+.blogdetails , .eventdetails {
+    display: none;
+}
+
+.blogcontainer p {
+    color: hsl(157, 100%, 49%);
+}
+
+.eventcontainer p {
+    color: cyan;
+}
+
+.eventcontainer a {
+    color: tomato;
+}
+
+.eventcontainer a:hover {
+    color: hsl(9, 100%, 74%);
+    font-size: 1.3rem;
+}
+
+#footerinfo , #footersocial{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#footerinfo h1 , #footersocial h1{
+    font-size: 2.2rem;
+    color: hsl(157, 100%, 49%);
+    border-bottom: 2px solid;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#footerinfo a , #footerinfo p ,#footersocial a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: cyan;
+}
+
+#footerinfo a:hover , #footersocial a:hover {
+    font-size: 1.5rem;
+}
+
+#footerinfo i , #footersocial i , #copyright i{
+    margin-right: 5px;
+    color: cyan;
+}
+
+#copyright {
+    color: cyan;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+
+/* Book Information Section */
+
+
+
+#booksearch {
+    width: 98vw;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#booksearch > h1 {
+    color: cyan;
+    font-size: 3rem;
+    border-bottom: 2px dotted;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#searchbook {
+    width: 40%;
+    height: 8%;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#findbook {
+    display: block;
+    margin: auto;
+    font-size: 2rem;
+    background-color: hsl(0, 0%, 10%);
+    color: tomato;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+#findbook:hover {
+    background-color: hsl(0, 0%, 20%);
+    cursor: pointer;
+}
+
+.showbook {
+    width: 40%;
+    margin: auto;
+    padding: 25px;
+    display: inline-block;
+}
+
+.title {
+    color: cyan;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.authorname {
+    color: hsl(157, 100%, 49%);
+    font-size: 1.5rem;
+    margin: 0px;
+}
+
+.publishyear {
+    color: tomato;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.bookimg {
+    margin: auto;
+}
+
+#stored {
+    width: 80%;
+    height: 1100px;
+    overflow: scroll;
+    scrollbar-width: none;
+    margin: auto;
+    display: none;
+}
+
+#currentlyread {
+    width: 98vw;
+    height: 87%;
+    margin: auto;
+}
+
+#currentlyread > h1 {
+    color: hsl(157, 100%, 49%);
+    border-bottom: 2px dotted;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.imgslide {
+    width: 22%;
+    animation-name: slideImg;
+    animation-duration: 8s;
+}
+
+@keyframes slideImg {
+    0% {opacity: 0%; transform: translateX(-500px);}
+    50%{opacity: 100%;}
+    100% {opacity: 0%; transform: translateX(500px);}
+}
+
+.error {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+/* Book Selection Section */
+
+
+
+#buyborrow {
+    width: 98vw;
+    margin: auto;
+}
+
+#buyborrow > h1 , #req > h1{
+    color: cyan;
+    font-size: 3rem;
+    border-bottom: 2px dotted;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#req > h1 {
+    color: hsl(157, 100%, 49%);
+}
+
+#buytext , #reqbook , #reqauthor{
+    width: 40%;
+    height: 8%;
+    margin: auto;
+    margin-bottom: 30px;
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#buybutton , #reqbutton {
+    font-size: 2rem;
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(157, 100%, 49%);
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#reqbutton {
+    color: cyan;
+}
+
+#buybutton:hover , #reqbutton:hover {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.buyborrowresult {
+    border: 1px dotted cyan;
+    width: 40%;
+    background-color: hsl(0, 0%, 10%);
+    display: none;
+}
+
+.bookname {
+    color: tomato;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.bookauthorname {
+    color: cyan;
+    font-size: 1.5rem;
+}
+
+.bookprice {
+    color: hsl(157, 100%, 49%);
+    display: inline-block;
+    font-size: 1.3rem;
+    margin:0px 30px 0px 30px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.bookprice:hover {
+    font-size: 1.5rem;
+}
+
+.buy , .borrow{
+    font-size: 2rem;
+    color: hsl(157, 100%, 49%);
+}
+
+.buysub , .borrowsub {
+    background-color: hsl(0, 0%, 10%);
+    color: cyan;
+    font-size: 1.5rem;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    margin: 0px 20px 20px 20px;
+    cursor: pointer;
+}
+
+.buysub:hover , .borrowsub:hover {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.borrow {
+    color: cyan;
+}
+
+.borrowsub {
+    color: hsl(157, 100%, 49%);
+}
+
+
+
+/* Book Reviews Section */
+
+
+
+#reviewpost , #reviewshow {
+    width: 98vw;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+#reviewpost > h1 , #reviewshow > h1 {
+    color: aquamarine;
+    font-size: 3rem;
+    border-bottom: 2px dotted;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#reviewpost .input , #reviewshow .input{
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 40%;
+    height: 8%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#reviewpost textarea {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    width: 60%;
+    height: 20%;
+    text-align: center;
+    resize: none;
+}
+
+#reviewpost textarea::placeholder {
+    position: relative;
+    top: 40%;
+}
+
+#reviewsub , #reviewget{
+    font-size: 2rem;
+    display: block;
+    background-color: hsl(0, 0%, 10%);
+    color: tomato;
+    padding: 15px;
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#reviewsub:hover , #reviewget:hover {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.show {
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+#reviewshow > h1 {
+    color:lawngreen;
+}
+
+#reviewget {
+    color: rgb(226, 43, 202);
+}
+
+.showrev {
+    background-color: hsl(0, 0%, 10%);
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    border: 1px dotted cyan;
+}
+
+.booknameshow {
+    color: hsl(157, 100%, 49%);
+    font-size: 3rem;
+    margin: 0px;
+}
+
+.authornameshow {
+    color: tomato;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.review {
+    color: cyan;
+    font-size: 1.5rem;
+}
+
+.usernameshow {
+    color: aquamarine;
+    font-size: 1.2rem;
+    text-align: right;
+    margin: 0px;
+    font-style: italic;
+}
+
+#reviewshow {
+    margin-bottom: 15px;
+}
+
+
+
+/* Discussion Forum Section */
+
+
+
+#msgcontainer {
+    width: 98vw;
+    height: 89.2vh;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 30%);
+    border-radius: 25px;
+}
+
+#msgshow {
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#msgsend {
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#msg{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-items: left;
+    float: left;
+    background-color: hsl(0, 0%, 10%);
+    color: whitesmoke;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    padding: 15px;
+    position: relative;
+    left: 1.5%;
+}
+
+#msgsub {
+    width: 15%;
+    height: 100%;
+    background-color: hsl(0, 0%, 10%);
+    color: cyan;
+    border: none;
+    border-radius: 25px;
+    font-size: 2rem;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    right: 1.5%;
+}
+
+#msgsub:hover {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.msgdiv {
+    max-width: 50%;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 10%);
+    float: right;
+}
+
+.message {
+    margin: 0px;
+    font-size: 1.8rem;
+    color: cyan;
+    height: auto;
+    text-align: left;
+}
